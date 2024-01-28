@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: aliceblue;
+            min-width: fit-content;
+        }
+
+        .svgg {
+            width: 30px;
+            height: 30px;
+        }
+
+        .switch {
+            margin: 0 10px;
+            cursor: pointer;
+        }
+
+        .switch-off {
+            filter: grayscale(100%);
+        }
+
+        .header {
+            height: 50px;
+            background-color: #6BBBFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            z-index: 2;
+            width: 100%;
+        }
+
+        .twitter {
+            height: 800px;
+            width: 340;
+        }
+
+        .all-cont {
+            display: flex;
+            justify-content: center;
+            transition: all 0.5s ease;
+            padding-top: 50px;
+            /* flex-wrap: wrap; */
+        }
+
+        .cont {
+            margin: 10px;
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.162);
+            display: block;
+            opacity: 1;
+            transition: all 0.5s ease;
+
+        }
+
+        .cont.not-active {
+            opacity: 0;
+            display: none;
+            pointer-events: none;
+            visibility: hidden;
+        }
+
+        #adhadhu {
+            background-color: white;
+            border: 2px solid #BB2330;
+        }
+
+        #dhauru {
+            background-color: white;
+            border: 1px solid white;
+        }
+
+        #mihaaru {
+            background-color: white;
+            border: 2px solid white;
+        }
+
+        #sun {
+            background-color: white;
+            border: 2px solid white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="switch" id="adhadhu-btn">
+            <img class="svgg" src="./Svg/adhadhu.svg" alt="">
+        </div>
+
+        <div class="switch" id="dhauru-btn">
+            <img class="svgg" src="./Svg/dhauru.svg" alt="">
+        </div>
+
+        <div class="switch" id="mihaaru-btn">
+            <img class="svgg" src="./Svg/mihaaru.svg" alt="">
+        </div>
+
+        <div class="switch" id="sun-btn">
+            <img class="svgg" src="./Svg/sun.svg" alt="">
+        </div>
+
+        <div class="switch switch-off" id="raajje-btn">
+            <img class="svgg" src="./Svg/raajje.svg" alt="">
+        </div>
+
+
+    </div>
+
+    <div class="all-cont">
+
+
+        <div class="cont" id="adhadhu">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="GZhXeR5O"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/adhadhucom" data-tabs="timeline" data-width=""
+                data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/adhadhucom" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/adhadhucom">Adhadhu</a></blockquote>
+            </div>
+        </div>
+
+        <div class="cont" id="dhauru">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="GZhXeR5O"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/dhaurulive" data-tabs="timeline" data-width=""
+                data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/dhaurulive" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/dhaurulive">Dhauru News</a></blockquote>
+            </div>
+        </div>
+
+        <div class="cont" id="mihaaru">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="GZhXeR5O"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/mihaaru" data-tabs="timeline" data-width=""
+                data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/mihaaru" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/mihaaru">Mihaaru</a></blockquote>
+            </div>
+        </div>
+
+        <div class="cont" id="sun">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="GZhXeR5O"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/sunmv" data-tabs="timeline" data-width=""
+                data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/sunmv" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/sunmv">Sun Mv</a></blockquote>
+            </div>
+        </div>
+
+        <div class="cont not-active" id="raajje">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous"
+                src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v19.0" nonce="GZhXeR5O"></script>
+
+            <div class="fb-page" data-href="https://www.facebook.com/Raajjemv" data-tabs="timeline" data-width=""
+                data-height="800" data-small-header="false" data-adapt-container-width="true" data-hide-cover="true"
+                data-show-facepile="false">
+                <blockquote cite="https://www.facebook.com/Raajjemv" class="fb-xfbml-parse-ignore"><a
+                        href="https://www.facebook.com/Raajjemv">Raajje Mv</a></blockquote>
+            </div>
+        </div>
+
+        <!-- <div class="cont">
+            <a class="twitter-timeline" data-width="340" data-height="800"
+                href="https://twitter.com/AdhadhuMV?ref_src=twsrc%5Etfw">Tweets by AdhadhuMV</a>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div> -->
+
+
+    </div>
+
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
